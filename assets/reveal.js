@@ -1,6 +1,6 @@
 /**
  * Scroll reveal: adds .is-visible to .reveal elements when they enter the viewport.
- * Required by _shared.css (.reveal starts at opacity:0).
+ * Required by shared.css (.reveal starts at opacity:0).
  */
 (function () {
   var nodes = document.querySelectorAll(".reveal");
