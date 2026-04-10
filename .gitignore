@@ -1,0 +1,12 @@
+# Python / local tooling (do not deploy to GitHub Pages)
+.venv/
+.pydeps/
+__pycache__/
+*.pyc
+.Python
+
+# OS
+.DS_Store
+
+# Optional: design source not needed on site (uncomment if you don't want them in repo)
+# *.pen
