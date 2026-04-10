@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>J.D. Phoebe Group — Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Amiri:ital,wght@0,400;0,700;1,400&family=Funnel+Sans:wght@300..800&family=Inter:wght@300..800&family=Newsreader:opsz,wght@6..72,300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    /* page-specific styles only (shared styles live in _shared.css) */
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      padding-block: clamp(4rem, 12vw, 7rem);
+      min-height: clamp(22rem, 56vh, 40rem);
+      display: flex;
+      align-items: center;
+      background-color: var(--surface);
+      background-image: url("assets/hero-architecture-bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background: linear-gradient(
+        125deg,
+        rgba(248, 250, 252, 0.78) 0%,
+        rgba(226, 235, 246, 0.72) 42%,
+        rgba(236, 242, 251, 0.76) 100%
+      );
+    }
+
+    .hero h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.85rem, 4vw, 2.625rem);
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      color: var(--text);
+      font-family: var(--font-head);
+    }
+
+    .hero-lead {
+      margin: 0 0 1rem;
+      font-size: 1.0625rem;
+      color: var(--sub);
+      max-width: none;
+      line-height: 1.45;
+      font-family: var(--font-sub);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-tag {
+      margin: 0;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--hint);
+      font-family: var(--font-cap);
+      text-align: left;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: none;
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      width: 100%;
+      padding-left: 8ch;
+    }
+
+    .hero-copy .hero-lead {
+      text-align: left;
+      text-align-last: left;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    @media (max-width: 720px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    .two-col h3 {
+      margin: 0 0 0.5rem;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--text);
+      font-family: var(--font-head);
+      letter-spacing: 0.01em;
+    }
+
+    .two-col p {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: var(--sub);
+      line-height: 1.65;
+      font-family: var(--font-body);
+    }
+
+    /* About: white band; full-width partner strip as visual divider (no crop) */
+    #about {
+      background: var(--surface);
+    }
+
+    .about-partner-logos {
+      margin-block: clamp(1.25rem, 3vw, 2rem) 0;
+      margin-inline: 0;
+      padding: 0;
+    }
+
+    .about-partner-logos img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* Reduce gap below partner strip before brand section */
+    #brand {
+      padding-top: clamp(1.5rem, 4vw, 2.5rem);
+    }
+
+    .brand-vm {
+      margin-top: clamp(1.5rem, 4vw, 2.5rem);
+    }
+
+    .brand-vm .prose {
+      max-width: none;
+    }
+
+    .thread {
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      font-size: 0.875rem;
+      color: var(--sub);
+      font-family: var(--font-body);
+      text-align: left;
+    }
+
+    .thread strong {
+      font-weight: 600;
+      color: var(--text);
+      font-family: var(--font-head);
+    }
+
+    .eco-head .eyebrow {
+      margin: 0 0 0.5rem;
+      font-size: 0.6875rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--hint);
+      font-weight: 400;
+      font-family: var(--font-cap);
+    }
+
+    .eco-head h2 { margin-bottom: 0.35rem; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      .cards { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      padding: 0 0 1.25rem;
+      background: transparent;
+    }
+
+    .card-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      border-radius: var(--radius);
+      outline: none;
+    }
+
+    .card-link:focus-visible {
+      box-shadow: 0 0 0 3px rgba(11, 11, 11, 0.22);
+    }
+
+    .card-link:hover .card-visual {
+      box-shadow: var(--lift);
+    }
+
+    .card-visual {
+      height: 10rem;
+      margin-bottom: 1rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--lift-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Logo-style thumbnails only (not ecosystem photos) */
+    .card-visual:not(.card-visual--photo) img {
+      max-height: 5rem;
+      width: auto;
+      max-width: 90%;
+      object-fit: contain;
+    }
+
+    /* Full-bleed photo: fixed frame; img fills via absolute + cover (avoids global img { height:auto } letterboxing) */
+    .card-visual.card-visual--photo {
+      position: relative;
+      display: block;
+      padding: 0;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .card-visual.card-visual--photo img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      max-height: none;
+      object-fit: cover;
+      object-position: center;
+      background-color: transparent;
+    }
+
+    .card-visual.dark {
+      background: var(--surface);
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--text);
+      font-family: var(--font-head);
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: var(--sub);
+      line-height: 1.6;
+      font-family: var(--font-body);
+    }
+
+    .found-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .found-hero-banner {
+      background: #f4f4f4;
+      padding: 2rem 2.5rem;
+    }
+
+    .found-hero-eyebrow {
+      margin: 0 0 0.5rem;
+      font-size: 0.625rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--hint);
+      font-family: var(--font-cap);
+    }
+
+    .found-hero-title {
+      margin: 0;
+      font-size: 1.375rem;
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--text);
+      font-family: var(--font-sub);
+      letter-spacing: 0.02em;
+    }
+
+    .found-main {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    @media (max-width: 800px) {
+      .found-main { grid-template-columns: 1fr; }
+    }
+
+    .found-visual {
+      aspect-ratio: 5 / 3;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    .found-visual--wide {
+      width: 400px;
+      max-width: 100%;
+      aspect-ratio: auto;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+    }
+
+    .found-visual--wide .found-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem;
+      width: 100%;
+    }
+
+    .found-visual--wide img {
+      max-width: 100%;
+      max-height: 11rem;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .found-visual-label {
+      font-size: 0.75rem;
+      color: var(--hint);
+      font-family: var(--font-cap);
+    }
+
+    .found-title {
+      margin: 0 0 1rem;
+      font-size: 1.625rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      font-family: var(--font-head);
+    }
+
+    .found-prose {
+      max-width: none;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    .synergy {
+      background: #000;
+      color: #f0f0f0;
+      padding-block: clamp(3rem, 7vw, 4.5rem);
+    }
+
+    .synergy-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .synergy .eyebrow {
+      margin: 0;
+      font-size: 0.6875rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #aaa;
+      font-family: var(--font-cap);
+    }
+
+    .synergy h2 {
+      margin: 0;
+      color: #f0f0f0;
+      font-size: 1.375rem;
+      font-family: var(--font-head);
+    }
+
+    .synergy .flow {
+      margin: 0;
+      font-size: 0.9375rem;
+      color: #ccc;
+      line-height: 1.75;
+      max-width: none;
+      width: 100%;
+      font-family: var(--font-body);
+      white-space: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .founder {
+      text-align: center;
+    }
+
+    .founder .wrap { max-width: 48rem; }
+
+    .founder .eyebrow {
+      margin: 0 0 1rem;
+      font-size: 0.6875rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--hint);
+      font-family: var(--font-cap);
+    }
+
+    .founder blockquote {
+      margin: 0 0 1.5rem;
+      font-size: 1.0625rem;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.75;
+      font-family: var(--font-body);
+    }
+
+    .founder cite {
+      font-style: normal;
+      font-size: 0.8125rem;
+      color: var(--sub);
+      font-family: var(--font-cap);
+    }
+
+    .founder-ph {
+      width: min(100%, 26rem);
+      margin-inline: auto;
+      margin-top: 2rem;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    /* Signature PNG is exported with alpha */
+    .founder-ph img {
+      display: block;
+      width: 100%;
+      max-width: 20rem;
+      height: auto;
+      margin-inline: auto;
+      object-fit: contain;
+      background: transparent;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="site-nav">
+    <nav class="wrap inner" aria-label="Primary">
+      <a class="brand-name" href="index.html"><img class="brand-logo" src="assets/logo-phoebe-group-inline.png" alt="" width="522" height="372" aria-hidden="true" decoding="async" />J.D. PHOEBE GROUP</a>
+      <div class="nav-right">
+        <a class="nav-link" href="about.html">About Us</a>
+        <div class="nav-dd">
+          <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-haspopup="true" id="eco-btn">
+            Ecosystem <span class="caret" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-dd-panel" role="menu" aria-labelledby="eco-btn">
+            <a class="nav-dd-item" href="shi-xin.html" role="menuitem"><span class="t">Shi Xin Culture</span><span class="d">Cultural industry, narrative projects, salons</span></a>
+            <a class="nav-dd-item" href="https://coursistant.com/" role="menuitem"><span class="t">Coursistant</span><span class="d">Education and AI infrastructure</span></a>
+            <a class="nav-dd-item" href="law.html" role="menuitem"><span class="t">J.D. Phoebe Law</span><span class="d">Global mobility, private client, legacy</span></a>
+            <a class="nav-dd-item" href="star-luminate.html" role="menuitem"><span class="t">Star Luminate</span><span class="d">Cultural supply chain, curated trade</span></a>
+          </div>
+        </div>
+
+        <div class="nav-dd">
+          <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-haspopup="true" id="fdn-btn">
+            JDP Foundation <span class="caret" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-dd-panel" role="menu" aria-labelledby="fdn-btn">
+            <a class="nav-dd-item" href="winston-lab.html" role="menuitem"><span class="t">Winston Lab of Social Science</span><span class="d">Research &amp; public dialogue</span></a>
+            <a class="nav-dd-item" href="foundation.html" role="menuitem"><span class="t">CNPAF</span><span class="d">Mental health support</span></a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="partnership.html">Partnership</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top" lang="en">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <h1 class="reveal">The Architecture of a Sustainable Future.</h1>
+          <p class="hero-lead reveal">
+            Innovation across Arts, Education, History, and Philosophy.
+          </p>
+          <p class="hero-tag reveal">Bridging Worlds. Empowering Minds.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="about-lead">
+          <div class="about-copy">
+            <h2>About Us</h2>
+            <p class="prose reveal">
+              We live in an era of fragmentation. At J.D. Phoebe Group, sustainability must evolve — sustaining our culture,
+              intellect, rights, and the human spirit. We are not a traditional holding company; we are a holistic ecosystem
+              where knowledge flows, legacy is secured across borders, culture is revitalized, and empathy is a force for good.
+            </p>
+          </div>
+        </div>
+        <figure class="about-partner-logos" role="presentation">
+          <img
+            src="assets/about-partners-strip.png"
+            srcset="assets/about-partners-strip@1x.png 1200w, assets/about-partners-strip@2x.png 2400w"
+            sizes="(max-width: 640px) 92vw, (max-width: 1024px) 86vw, 1200px"
+            alt="StarLuminate, Chinese Psychological Assistance Foundation, Phoebe Law, Winston Lab of Social Science and Innovation, Coursistant"
+            width="1200"
+            height="240"
+            decoding="async"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section id="brand">
+      <div class="wrap">
+        <div class="brand-vm two-col reveal">
+          <div>
+            <h3>Our Vision</h3>
+            <p class="prose">
+              A borderless world where cultural heritage is honored, educational opportunity is universal, and mental
+              resilience is a fundamental human right.
+            </p>
+          </div>
+          <div>
+            <h3>Our Mission</h3>
+            <p class="prose">
+              Orchestrate a symbiotic ecosystem of high-value services — law, education, culture, and trade —
+              generating resources to fund the sustainability of the human spirit through the J.D. Phoebe Foundation.
+            </p>
+          </div>
+        </div>
+        <div class="thread reveal">
+          <strong>The Golden Thread: Holistic Sustainability</strong><br />
+          Shi Xin sustains Civilization · Coursistant sustains Human Potential · J.D. Phoebe Law sustains Security &amp;
+          Legacy · The Foundation sustains Hope.
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="ecosystem">
+      <div class="wrap">
+        <header class="eco-head">
+          <p class="eyebrow">Business ecosystem</p>
+          <h2>Multiple pillars. One ecosystem.</h2>
+        </header>
+        <div class="cards">
+          <article class="card reveal">
+            <a class="card-link" href="shi-xin.html" aria-label="Open Shi Xin Culture. Ltd">
+              <div class="card-visual card-visual--photo">
+                <img src="assets/eco-shi-xin.png" alt="World map with compass and trade routes" width="800" height="400" decoding="async" />
+              </div>
+              <h3>Shi Xin Culture. Ltd</h3>
+              <p>
+                The Curator of Meaning. High-concept cultural projects, immersive narratives, and intellectual salons —
+                modernizing tradition as a living asset.
+              </p>
+            </a>
+          </article>
+          <article class="card reveal">
+            <a class="card-link" href="https://coursistant.com/" target="_blank" rel="noopener" aria-label="Open Coursistant website">
+              <div class="card-visual card-visual--photo">
+                <img src="assets/eco-coursistant.png" alt="Laptop and books on educational technology" width="1600" height="853" decoding="async" />
+              </div>
+              <h3>Coursistant</h3>
+              <p>
+                Liberating the Educators. AI-driven infrastructure for intellectual efficiency — automating grading and
+                admin so mentors can focus on teaching.
+              </p>
+            </a>
+          </article>
+          <article class="card reveal">
+            <a class="card-link" href="law.html" aria-label="Open J.D. Phoebe Law">
+              <div class="card-visual card-visual--photo">
+                <img src="assets/eco-law.png" alt="Law book and gavel" width="800" height="400" decoding="async" />
+              </div>
+              <h3>J.D. Phoebe Law</h3>
+              <p>
+                Global Mobility &amp; Private Client Services. Cross-border asset protection, legacy planning, and
+                compliance — security to move and to stay.
+              </p>
+            </a>
+          </article>
+          <article class="card reveal">
+            <a class="card-link" href="star-luminate.html" aria-label="Open Star Luminate">
+              <div class="card-visual card-visual--photo">
+                <img src="assets/eco-star-luminate.png" alt="Global trade map with shipping routes" width="800" height="400" decoding="async" />
+              </div>
+              <h3>Star Luminate</h3>
+              <p>
+                The Cultural Supply Chain. Curating and distributing lifestyle and cultural artifacts — ethical, efficient
+                flow of resources across the ecosystem.
+              </p>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="foundation">
+      <div class="wrap found-stack">
+        <div class="found-hero-banner">
+          <p class="found-hero-eyebrow">Philanthropy</p>
+          <p class="found-hero-title">J.D. Phoebe Foundation</p>
+        </div>
+        <div class="found-main">
+          <div class="found-copy-block">
+            <h2 class="found-title reveal">J.D. Phoebe Foundation</h2>
+            <p class="prose found-prose reveal">
+              From charity to empowerment — investing in mental health infrastructure through our CNPAF, and channeling resources toward the sustainability of
+              the human spirit at Winston Lab of Social Science and Innovation.
+            </p>
+            <p class="prose found-prose reveal" style="margin-top: 1rem;">
+              <a href="foundation.html">Learn about our Foundation programs →</a>
+            </p>
+          </div>
+          <div class="found-visual found-visual--wide reveal" role="img" aria-label="CNPAF and Winston Lab logos">
+          <div class="found-logos" aria-hidden="true">
+            <img src="assets/logo-cnpaf.png" alt="" width="400" height="400" />
+            <img src="assets/logo-winstonlab-emblem.png" alt="" width="2048" height="2048" decoding="async" />
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="synergy" id="synergy">
+      <div class="wrap synergy-inner">
+        <p class="eyebrow reveal">How it connects</p>
+        <h2 class="reveal">The sustainable loop</h2>
+        <p class="flow reveal">
+          Generate (Law, Star Luminate) → Educate (Coursistant) → Create → Execute (Shi Xin, CNPAF, Foundation) → Sustain.
+        </p>
+      </div>
+    </section>
+
+    <section class="alt founder" id="founder">
+      <div class="wrap">
+        <p class="eyebrow">From the founder</p>
+        <blockquote class="reveal" cite="#">
+          We built J.D. Phoebe Law to give families security. Coursistant to give educators time back. Shi Xin to give
+          culture a stage. The heart of our group is the Foundation — handing the microphone to the next generation. We
+          are not just companies; we are a promise to the future.
+        </blockquote>
+        <cite class="reveal">— J.D. Phoebe, Founder &amp; Chairman</cite>
+        <div class="founder-ph reveal" role="img" aria-label="Founder signature">
+          <img src="assets/signature-jerry.png" alt="Signature" width="1024" height="810" decoding="async" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="inner">
+      <strong>J.D. Phoebe Group</strong>
+      <img class="footer-logo" src="assets/logo-phoebe-group-inline.png" alt="" width="522" height="372" aria-hidden="true" loading="lazy" decoding="async" />
+      <div class="footer-contact">
+        <p>
+          Los Angeles, California<br />
+          US Bank Tower, 633 W 5th St, RM 2616
+        </p>
+        <p><a href="mailto:jdphoebe@jdphoebe.com">jdphoebe@jdphoebe.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/reveal.js"></script>
+</body>
+</html>

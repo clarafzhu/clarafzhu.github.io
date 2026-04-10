@@ -1,0 +1,1223 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "JDP Group Website",
+      "clip": true,
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "a7P7k",
+          "name": "Nav",
+          "width": "fill_container",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#00000012"
+          },
+          "padding": [
+            0,
+            48
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "BwbPj",
+              "name": "brandBar",
+              "width": 207,
+              "height": 64,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UQ84n",
+                  "fill": "#0B0B0B",
+                  "content": "J.D. PHOEBE GROUP",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "letterSpacing": 3
+                }
+              ],
+              "cornerRadius": 0
+            },
+            {
+              "type": "frame",
+              "id": "iLN6u",
+              "name": "navPills",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "w306ae64b",
+                  "name": "navRow",
+                  "layout": "horizontal",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "justifyContent": "flex_end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wac49bc83",
+                      "fill": "#0B0B0B",
+                      "content": "About Us",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "w08243c7a",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "alignItems": "start",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "w29011304",
+                          "fill": "#0B0B0B",
+                          "content": "Companies ⌄",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "w8dd5a7de",
+                          "layout": "vertical",
+                          "gap": 12,
+                          "padding": 14,
+                          "fill": "#FFFFFF",
+                          "width": 280,
+                          "cornerRadius": 0,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#00000033"
+                          },
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "wd028c482",
+                              "fill": "#0B0B0B",
+                              "content": "J.D. Phoebe Foundation\nPhilanthropy & programs",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal",
+                              "lineHeight": 1.35
+                            },
+                            {
+                              "type": "text",
+                              "id": "wfef3ae96",
+                              "fill": "#0B0B0B",
+                              "content": "Shi Xin Culture\nCultural industry & salons",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal",
+                              "lineHeight": 1.35
+                            },
+                            {
+                              "type": "text",
+                              "id": "we3afd374",
+                              "fill": "#0B0B0B",
+                              "content": "Coursistant\nEducation & AI infrastructure",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal",
+                              "lineHeight": 1.35
+                            },
+                            {
+                              "type": "text",
+                              "id": "w5620395a",
+                              "fill": "#0B0B0B",
+                              "content": "The Winston Lab\nResearch & public dialogue",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal",
+                              "lineHeight": 1.35
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "wbd411b76",
+                      "fill": "#0B0B0B",
+                      "content": "Portfolio",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wec0115de",
+                      "fill": "#0B0B0B",
+                      "content": "Directory",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "w27c31c68",
+                      "fill": "#0B0B0B",
+                      "content": "Log In",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "height": 200
+        },
+        {
+          "type": "frame",
+          "id": "jNiMF",
+          "name": "Hero",
+          "width": "fill_container",
+          "gap": 64,
+          "padding": [
+            72,
+            48,
+            88,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "n47Jl",
+              "name": "Illustration Placeholder",
+              "width": 480,
+              "height": 320,
+              "fill": "#F7F7F7",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#00000024"
+              },
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "cornerRadius": 0
+            },
+            {
+              "type": "frame",
+              "id": "yFaq2",
+              "name": "heroText",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "4XBJV",
+                  "fill": "#0B0B0B",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The Architecture of a Sustainable Future.",
+                  "lineHeight": 1.15,
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 36,
+                  "fontWeight": "normal",
+                  "letterSpacing": -0.3
+                },
+                {
+                  "type": "text",
+                  "id": "OulkZ",
+                  "fill": "#5c5c5c",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Innovation across Arts, Education, History, and Philosophy — shaping a durable, humane future.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "vxW18",
+                  "fill": "#6A6A6A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Bridging Worlds. Empowering Minds.",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wQmfx",
+          "name": "About Us",
+          "width": "fill_container",
+          "fill": "#F6F6F6",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            64,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "D0iLO",
+              "name": "manLayout",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DhlG1",
+                  "name": "textCol",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iR0YI",
+                      "fill": "#0B0B0B",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "About Us",
+                      "lineHeight": 1.15,
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 28,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "9QVHd",
+                      "fill": "#444444",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "We are a holistic ecosystem. Sustainability spans environment, culture, intellect, and law.",
+                      "lineHeight": 1.65,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AGe3p",
+              "name": "aboutPlaceholder",
+              "width": "fill_container",
+              "height": 72,
+              "fill": "#EAEAEA",
+              "justifyContent": "center",
+              "alignItems": "center"
+            },
+            {
+              "type": "frame",
+              "id": "w59ff26e4",
+              "height": 1,
+              "fill": "#000000",
+              "width": "fill_container"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T8E0s",
+          "name": "Brand identity",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "wGSoN",
+              "name": "brandRow",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Zl6iW",
+                  "name": "visCol",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 0
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "RYCdn",
+                      "fill": "#0B0B0B",
+                      "content": "Our World",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 20,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "OTQ0q",
+                      "fill": "#555555",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A network of practices that preserve craft, publish ideas, and convene serious dialogue across borders.",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wd165de10",
+                      "height": 72,
+                      "fill": "#EAEAEA",
+                      "width": "fill_container",
+                      "cornerRadius": 0,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0000001A"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uTKiz",
+                  "name": "missCol",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": 0
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QMgk0",
+                      "fill": "#0B0B0B",
+                      "content": "Our Mission",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 20,
+                      "fontWeight": "normal",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "BmXQC",
+                      "fill": "#555555",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "To steward institutions that outlast cycles — education that compounds, philanthropy that empowers, research that clarifies.",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wfb2e6de2",
+                      "height": 72,
+                      "fill": "#EAEAEA",
+                      "width": "fill_container",
+                      "cornerRadius": 0,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#0000001A"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "frame",
+          "id": "AwdbX",
+          "name": "Ecosystem",
+          "width": "fill_container",
+          "fill": "#F6F6F6",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            64,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "olDJn",
+              "name": "ecoIntro",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "o5dRU",
+                  "name": "ecoIntroTxt",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KZcoy",
+                      "fill": "#6A6A6A",
+                      "content": "BUSINESS ECOSYSTEM",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "RhJAG",
+                      "fill": "#0B0B0B",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Multiple pillars. One ecosystem.",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 22,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GYa90",
+              "name": "row1",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QLzpt",
+                  "name": "card1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#00000033"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VMD1F",
+                      "fill": "#0B0B0B",
+                      "content": "Shi Xin Culture, Ltd",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 18,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "jrLti",
+                      "fill": "#2F2F2F",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Cultural production, publishing, and experiential programs.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ],
+                  "height": 168,
+                  "cornerRadius": 0
+                },
+                {
+                  "type": "frame",
+                  "id": "bPxds",
+                  "name": "card2",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#00000033"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "4ls2d",
+                      "fill": "#0B0B0B",
+                      "content": "Coursistant",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 18,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "QWaVk",
+                      "fill": "#2F2F2F",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Courseware, tutoring rails, and responsible AI for learning.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ],
+                  "height": 168,
+                  "cornerRadius": 0
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QpuoX",
+              "name": "row2",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "y6fO0",
+                  "name": "card3",
+                  "width": "fill_container",
+                  "fill": "#0B0B0B",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF33"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XygdT",
+                      "fill": "#FFFFFF",
+                      "content": "J.D. Phoebe Law",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 18,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "kP9E8",
+                      "fill": "#DDDDDD",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Counsel for institutions operating across innovation and compliance.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ],
+                  "height": 168,
+                  "justifyContent": "center",
+                  "cornerRadius": 0
+                },
+                {
+                  "type": "frame",
+                  "id": "BsfKZ",
+                  "name": "card4",
+                  "width": "fill_container",
+                  "fill": "#0B0B0B",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF33"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FrkVA",
+                      "fill": "#FFFFFF",
+                      "content": "The Winston Lab",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 18,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.2
+                    },
+                    {
+                      "type": "text",
+                      "id": "Zvzos",
+                      "fill": "#DDDDDD",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Research briefings and public programs.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ],
+                  "height": 168,
+                  "justifyContent": "center",
+                  "cornerRadius": 0
+                }
+              ]
+            }
+          ],
+          "cornerRadius": 0
+        },
+        {
+          "type": "frame",
+          "id": "40sk2",
+          "name": "Foundation",
+          "width": "fill_container",
+          "gap": 32,
+          "padding": [
+            64,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "qFbvJ",
+              "name": "foundText",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w2c797671",
+                  "fill": "#6A6A6A",
+                  "content": "FOUNDATION",
+                  "fontFamily": "Newsreader",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "RRE5W",
+                  "fill": "#0B0B0B",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "J.D. Phoebe Foundation",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 26,
+                  "fontWeight": "normal",
+                  "letterSpacing": -0.3
+                },
+                {
+                  "type": "text",
+                  "id": "otcxG",
+                  "fill": "#444444",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Programs that move from relief to capability — grants, cohorts, and field partnerships.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qsJlj",
+              "name": "Illustration",
+              "width": 400,
+              "height": 200,
+              "fill": "#F7F7F7",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#00000024"
+              },
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [],
+              "cornerRadius": 0
+            }
+          ],
+          "layout": "horizontal",
+          "alignItems": "center"
+        },
+        {
+          "type": "frame",
+          "id": "Tvp5n",
+          "name": "Footer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 0,
+          "padding": 0,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#00000012"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "wd03bf7b8",
+              "padding": [
+                18,
+                48
+              ],
+              "fill": "#000000",
+              "width": "fill_container",
+              "height": 64,
+              "justifyContent": "flex_start",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wd165e55a",
+                  "fill": "#FFFFFF",
+                  "content": "The sustainable key",
+                  "fontFamily": "Funnel Sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w3d591ae2",
+              "layout": "horizontal",
+              "gap": 32,
+              "padding": [
+                28,
+                48
+              ],
+              "fill": "#FFFFFF",
+              "width": "fill_container",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "w6edefedd",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "width": "fill_container",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w796649af",
+                      "fill": "#0B0B0B",
+                      "content": "J.D. Phoebe Group",
+                      "fontFamily": "Funnel Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "w81921648",
+                      "fill": "#2F2F2F",
+                      "content": "New York · Shanghai · inquiries@jdp.group",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wcf75d0e8",
+                      "fill": "#6A6A6A",
+                      "content": "Privacy · Terms · © 2026",
+                      "fontFamily": "Newsreader",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "w63daff49",
+                  "width": 120,
+                  "height": 48,
+                  "fill": "#F0F0F0",
+                  "cornerRadius": 0,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#00000024"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cornerRadius": 0
+    },
+    {
+      "type": "frame",
+      "id": "1rv2q",
+      "x": 1520,
+      "y": 40,
+      "name": "PAGE — Shi Xin",
+      "width": 1360,
+      "height": 860,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 14,
+      "padding": 56,
+      "children": [
+        {
+          "type": "frame",
+          "id": "w94690848",
+          "height": 36,
+          "fill": "#F6F6F6",
+          "width": "fill_container",
+          "padding": [
+            8,
+            12
+          ],
+          "justifyContent": "flex_start",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "wcec49009",
+              "fill": "#6A6A6A",
+              "content": "PAGE — shi-xin.html",
+              "fontFamily": "Newsreader",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "wb76e1fab",
+          "fill": "#0B0B0B",
+          "content": "Shi Xin Culture, Ltd",
+          "fontFamily": "Funnel Sans",
+          "fontSize": 30,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wd732ccd6",
+          "fill": "#2F2F2F",
+          "textGrowth": "fixed-width",
+          "width": 920,
+          "content": "Cultural industry, narrative projects, and salons — sketched as title plus short copy only.",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "w2f305a67",
+          "height": 1,
+          "fill": "#00000024",
+          "width": "fill_container"
+        }
+      ],
+      "cornerRadius": 0
+    },
+    {
+      "type": "frame",
+      "id": "cpoDD",
+      "x": 2920,
+      "y": 40,
+      "name": "PAGE — Coursistant",
+      "width": 1360,
+      "height": 860,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 14,
+      "padding": 56,
+      "children": [
+        {
+          "type": "frame",
+          "id": "w7e1e02d8",
+          "height": 36,
+          "fill": "#F6F6F6",
+          "width": "fill_container",
+          "padding": [
+            8,
+            12
+          ],
+          "justifyContent": "flex_start",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "w5156bf95",
+              "fill": "#6A6A6A",
+              "content": "PAGE — coursistant.html",
+              "fontFamily": "Newsreader",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "w87dd1f0d",
+          "fill": "#0B0B0B",
+          "content": "Coursistant",
+          "fontFamily": "Funnel Sans",
+          "fontSize": 30,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "w4513f943",
+          "fill": "#2F2F2F",
+          "textGrowth": "fixed-width",
+          "width": 920,
+          "content": "Education and AI infrastructure — hero, features, and one illustration frame.",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "w320bf0c3",
+          "height": 1,
+          "fill": "#00000024",
+          "width": "fill_container"
+        }
+      ],
+      "cornerRadius": 0
+    },
+    {
+      "type": "frame",
+      "id": "AJLbY",
+      "x": 4320,
+      "y": 40,
+      "name": "PAGE — Law",
+      "width": 1360,
+      "height": 860,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 14,
+      "padding": 56,
+      "children": [
+        {
+          "type": "frame",
+          "id": "w2eab7840",
+          "height": 36,
+          "fill": "#F6F6F6",
+          "width": "fill_container",
+          "padding": [
+            8,
+            12
+          ],
+          "justifyContent": "flex_start",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "w654eb567",
+              "fill": "#6A6A6A",
+              "content": "PAGE — law.html",
+              "fontFamily": "Newsreader",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "w4bdf0e1e",
+          "fill": "#0B0B0B",
+          "content": "J.D. Phoebe Law",
+          "fontFamily": "Funnel Sans",
+          "fontSize": 30,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wa5c49e12",
+          "fill": "#2F2F2F",
+          "textGrowth": "fixed-width",
+          "width": 920,
+          "content": "Global mobility and private client narrative — copy column versus logo-in-frame.",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "wcb4d5822",
+          "height": 1,
+          "fill": "#00000024",
+          "width": "fill_container"
+        }
+      ],
+      "cornerRadius": 0
+    },
+    {
+      "type": "frame",
+      "id": "U2RXc",
+      "x": 5720,
+      "y": 40,
+      "name": "PAGE — The Winston Lab",
+      "width": 1360,
+      "height": 860,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 14,
+      "padding": 56,
+      "children": [
+        {
+          "type": "frame",
+          "id": "w21511e7d",
+          "height": 36,
+          "fill": "#F6F6F6",
+          "width": "fill_container",
+          "padding": [
+            8,
+            12
+          ],
+          "justifyContent": "flex_start",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "w3510c630",
+              "fill": "#6A6A6A",
+              "content": "PAGE — the-winston-lab.html",
+              "fontFamily": "Newsreader",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "wadaf52e1",
+          "fill": "#0B0B0B",
+          "content": "The Winston Lab",
+          "fontFamily": "Funnel Sans",
+          "fontSize": 30,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wea35cb4c",
+          "fill": "#2F2F2F",
+          "textGrowth": "fixed-width",
+          "width": 920,
+          "content": "Research briefings and public programs — minimal inner page shell.",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "w1d1dd119",
+          "height": 1,
+          "fill": "#00000024",
+          "width": "fill_container"
+        }
+      ],
+      "cornerRadius": 0
+    },
+    {
+      "type": "frame",
+      "id": "AR2s9",
+      "x": 7120,
+      "y": 40,
+      "name": "PAGE — Partnership",
+      "width": 1360,
+      "height": 860,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 14,
+      "padding": 56,
+      "children": [
+        {
+          "type": "frame",
+          "id": "w8c080982",
+          "height": 36,
+          "fill": "#F6F6F6",
+          "width": "fill_container",
+          "padding": [
+            8,
+            12
+          ],
+          "justifyContent": "flex_start",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "wa8a00088",
+              "fill": "#6A6A6A",
+              "content": "PAGE — partnership.html",
+              "fontFamily": "Newsreader",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "wadaf9280",
+          "fill": "#0B0B0B",
+          "content": "Partnership",
+          "fontFamily": "Funnel Sans",
+          "fontSize": 30,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "wf4c9edb8",
+          "fill": "#2F2F2F",
+          "textGrowth": "fixed-width",
+          "width": 920,
+          "content": "Institutional and commercial tracks as two bordered cards with CTAs.",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "w8df6bd88",
+          "height": 1,
+          "fill": "#00000024",
+          "width": "fill_container"
+        }
+      ],
+      "cornerRadius": 0
+    }
+  ]
+}

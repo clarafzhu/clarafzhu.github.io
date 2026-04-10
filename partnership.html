@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Partnership — J.D. Phoebe Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Amiri:ital,wght@0,400;0,700;1,400&family=Funnel+Sans:wght@300..800&family=Inter:wght@300..800&family=Newsreader:opsz,wght@6..72,300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    .hero{padding-block:clamp(3.25rem,9vw,5.5rem);}
+    .hero h1{margin:0 0 2em;font-size:clamp(1.85rem,4vw,2.625rem);font-weight:400;letter-spacing:-.03em;line-height:1.15;color:var(--text);}
+    .lead{margin:0 0 2em;color:var(--sub);max-width:44rem;}
+    @supports (margin-bottom: 2lh){
+      .hero h1{margin-bottom:2lh;}
+      .lead{margin-bottom:2lh;}
+    }
+    .partner-logos{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      column-gap:clamp(1.8rem,4vw,2.7rem);
+      row-gap:clamp(4.6rem,10vw,6.7rem);
+      margin-top:clamp(1.75rem,4vw,2.5rem);
+      align-items:stretch;
+    }
+    @media (max-width:720px){.partner-logos{grid-template-columns:repeat(2,minmax(0,1fr));}}
+    .partner-logo{
+      --scale:1;
+      height:clamp(52px,5.2vw,70px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .partner-logo img{
+      max-height:100%;
+      max-width:100%;
+      width:auto;
+      height:auto;
+      object-fit:contain;
+      display:block;
+      background:transparent;
+      transform:scale(var(--scale));
+      transform-origin:center;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-nav">
+    <nav class="wrap inner" aria-label="Primary">
+      <a class="brand-name" href="index.html"><img class="brand-logo" src="assets/logo-phoebe-group-inline.png" alt="" width="522" height="372" aria-hidden="true" decoding="async" />J.D. PHOEBE GROUP</a>
+      <div class="nav-right">
+        <a class="nav-link" href="about.html">About Us</a>
+        <div class="nav-dd">
+          <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-haspopup="true" id="eco-btn">
+            Ecosystem <span class="caret" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-dd-panel" role="menu" aria-labelledby="eco-btn">
+            <a class="nav-dd-item" href="shi-xin.html" role="menuitem"><span class="t">Shi Xin Culture</span><span class="d">Cultural industry, narrative projects, salons</span></a>
+            <a class="nav-dd-item" href="https://coursistant.com/" role="menuitem"><span class="t">Coursistant</span><span class="d">Education and AI infrastructure</span></a>
+            <a class="nav-dd-item" href="law.html" role="menuitem"><span class="t">J.D. Phoebe Law</span><span class="d">Global mobility, private client, legacy</span></a>
+            <a class="nav-dd-item" href="star-luminate.html" role="menuitem"><span class="t">Star Luminate</span><span class="d">Cultural supply chain, curated trade</span></a>
+          </div>
+        </div>
+
+        <div class="nav-dd">
+          <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-haspopup="true" id="fdn-btn">
+            JDP Foundation <span class="caret" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-dd-panel" role="menu" aria-labelledby="fdn-btn">
+            <a class="nav-dd-item" href="winston-lab.html" role="menuitem"><span class="t">Winston Lab of Social Science</span><span class="d">Research &amp; public dialogue</span></a>
+            <a class="nav-dd-item" href="foundation.html" role="menuitem"><span class="t">CNPAF</span><span class="d">Mental health support</span></a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="partnership.html">Partnership</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Partnership</h1>
+        <p class="lead">
+          At J.D. Phoebe Group, we believe that true sustainability requires cross-sector collaboration. Our ecosystem thrives on strategic alliances across
+          academia, law, healthcare, media, and global trade. Together with our esteemed partners—ranging from world-class universities to visionary community
+          organizations—we are building a borderless network to empower minds, secure legacies, and revitalize culture.
+        </p>
+        <div class="partner-logos" aria-label="Partners">
+          <div class="partner-logo"><img src="assets/partnerships/partnerships/UCLA_School_of_Law_Logo.jpg" alt="UCLA School of Law" loading="lazy" decoding="async" /></div>
+          <div class="partner-logo"><img src="assets/partnerships/partnerships/USC_Viterbi_School_of_Engineering_logo.svg.png" alt="USC Viterbi School of Engineering" loading="lazy" decoding="async" /></div>
+          <div class="partner-logo"><img src="assets/partnerships/partnerships/UIUC-Logo.jpg" alt="UIUC" loading="lazy" decoding="async" /></div>
+          <div class="partner-logo"><img src="assets/partnerships/partnerships/campus-logo.jpg" alt="Campus" loading="lazy" decoding="async" /></div>
+
+          <div class="partner-logo"><img src="assets/partnerships/partnerships/AACNTV_logo_small02.png" alt="AACNTV" loading="lazy" decoding="async" /></div>
+          <div class="partner-logo"><img src="assets/partnerships/partnerships/Formal_Leonard-Davis_CardOnTrans-01.png" alt="Leonard Davis" loading="lazy" decoding="async" /></div>
+          <div class="partner-logo" style="--scale:1.18;"><img src="assets/partnerships/partnerships/南加成人日间保健中心.png" alt="南加成人日间保健中心" loading="lazy" decoding="async" /></div>
+          <div class="partner-logo" style="--scale:1.25;"><img src="assets/partnerships/partnerships/黄帝陵基金会.png" alt="黄帝陵基金会" loading="lazy" decoding="async" /></div>
+          <div class="partner-logo"><img src="assets/partnerships/partnerships/截屏2026-04-10 03.31.30.png" alt="Partner logo" loading="lazy" decoding="async" /></div>
+          <div class="partner-logo" style="--scale:1.25;"><img src="assets/partnerships/partnerships/截屏2026-04-10 03.31.45.png" alt="Partner logo" loading="lazy" decoding="async" /></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <strong>J.D. Phoebe Group</strong>
+      <img class="footer-logo" src="assets/logo-phoebe-group-inline.png" alt="" width="522" height="372" aria-hidden="true" loading="lazy" decoding="async" />
+      <div class="footer-contact">
+        <p>
+          Los Angeles, California<br />
+          US Bank Tower, 633 W 5th St, RM 2616
+        </p>
+        <p><a href="mailto:jdphoebe@jdphoebe.com">jdphoebe@jdphoebe.com</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us — J.D. Phoebe Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Amiri:ital,wght@0,400;0,700;1,400&family=Funnel+Sans:wght@300..800&family=Inter:wght@300..800&family=Newsreader:opsz,wght@6..72,300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    .about-page .wrap {
+      max-width: min(88rem, 100%);
+    }
+
+    .about-hero {
+      padding-block: clamp(3.5rem, 10vw, 6rem);
+    }
+
+    .about-hero .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: start;
+    }
+
+    @media (max-width: 860px) {
+      .about-hero .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .about-hero .about-copy .hero-lead {
+      max-width: none;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+    }
+
+    .about-hero h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.85rem, 4vw, 2.625rem);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: var(--text);
+      font-family: var(--font-head);
+    }
+
+    .about-hero .hero-tag {
+      margin: 0;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--hint);
+      font-family: var(--font-cap);
+    }
+
+    .about-hero .hero-aside {
+      justify-self: end;
+      align-self: start;
+      padding-top: 0.25rem;
+    }
+
+    /* Real RGBA mark; size ~1/4 of full mark asset */
+    .about-hero .hero-aside img {
+      display: block;
+      width: 9.375rem;
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 860px) {
+      .about-hero .hero-aside {
+        justify-self: start;
+      }
+    }
+
+    .about-page section .prose {
+      max-width: min(52rem, 100%);
+    }
+  </style>
+</head>
+<body class="about-page">
+  <header class="site-nav">
+    <nav class="wrap inner" aria-label="Primary">
+      <a class="brand-name" href="index.html"><img class="brand-logo" src="assets/logo-phoebe-group-inline.png" alt="" width="522" height="372" aria-hidden="true" decoding="async" />J.D. PHOEBE GROUP</a>
+      <div class="nav-right">
+        <a class="nav-link" href="about.html">About Us</a>
+        <div class="nav-dd">
+          <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-haspopup="true" id="eco-btn">
+            Ecosystem <span class="caret" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-dd-panel" role="menu" aria-labelledby="eco-btn">
+            <a class="nav-dd-item" href="shi-xin.html" role="menuitem"><span class="t">Shi Xin Culture</span><span class="d">Cultural industry, narrative projects, salons</span></a>
+            <a class="nav-dd-item" href="https://coursistant.com/" role="menuitem"><span class="t">Coursistant</span><span class="d">Education and AI infrastructure</span></a>
+            <a class="nav-dd-item" href="law.html" role="menuitem"><span class="t">J.D. Phoebe Law</span><span class="d">Global mobility, private client, legacy</span></a>
+            <a class="nav-dd-item" href="star-luminate.html" role="menuitem"><span class="t">Star Luminate</span><span class="d">Cultural supply chain, curated trade</span></a>
+          </div>
+        </div>
+
+        <div class="nav-dd">
+          <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-haspopup="true" id="fdn-btn">
+            JDP Foundation <span class="caret" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-dd-panel" role="menu" aria-labelledby="fdn-btn">
+            <a class="nav-dd-item" href="winston-lab.html" role="menuitem"><span class="t">Winston Lab of Social Science</span><span class="d">Research &amp; public dialogue</span></a>
+            <a class="nav-dd-item" href="foundation.html" role="menuitem"><span class="t">CNPAF</span><span class="d">Mental health support</span></a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="partnership.html">Partnership</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-hero wrap">
+      <div class="hero-grid">
+        <div class="hero-main">
+          <div class="about-copy">
+            <h1 class="reveal">About Us</h1>
+            <p class="hero-lead reveal">
+              We live in an era of fragmentation. At J.D. Phoebe Group, sustainability must evolve — sustaining our culture,
+              intellect, rights, and the human spirit. We are not a traditional holding company; we are a holistic ecosystem
+              where knowledge flows, legacy is secured across borders, culture is revitalized, and empathy is a force for good.
+            </p>
+            <p class="hero-tag reveal">Bridging Worlds. Empowering Minds.</p>
+          </div>
+        </div>
+        <div class="hero-aside reveal">
+          <img
+            src="assets/logo-phoebe-mark.png"
+            alt="J.D. Phoebe Group mark"
+            width="150"
+            height="108"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <div class="zigzag">
+          <div class="zigzag-row zigzag-row--solo">
+            <div class="zigzag-t reveal">
+              <h2>Holistic sustainability</h2>
+              <p class="prose">
+                Sustainability must evolve. It is no longer enough to merely sustain our planet; we must sustain our culture,
+                our intellect, our rights, and most importantly, the human spirit.
+              </p>
+            </div>
+          </div>
+          <div class="zigzag-row zigzag-row--solo">
+            <div class="zigzag-t reveal">
+              <h2>Vision &amp; Mission</h2>
+              <p class="prose">
+                Our vision is a borderless world where cultural heritage is honored, educational opportunity is universal, and
+                mental resilience is a fundamental human right. Our mission is to orchestrate a symbiotic ecosystem of high-value
+                services—spanning law, education, culture, and trade—that funds the sustainability of the human spirit through the
+                J.D. Phoebe Foundation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <strong>J.D. Phoebe Group</strong>
+      <img class="footer-logo" src="assets/logo-phoebe-group-inline.png" alt="" width="522" height="372" aria-hidden="true" loading="lazy" decoding="async" />
+      <div class="footer-contact">
+        <p>
+          Los Angeles, California<br />
+          US Bank Tower, 633 W 5th St, RM 2616
+        </p>
+        <p><a href="mailto:jdphoebe@jdphoebe.com">jdphoebe@jdphoebe.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/reveal.js"></script>
+</body>
+</html>
+
